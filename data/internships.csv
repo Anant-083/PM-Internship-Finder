@@ -1,0 +1,51 @@
+id,company,role,sector,location,state,skills_required,education_required,stipend,duration_months
+1,Reliance Industries,Data Analyst Intern,Oil & Gas,Mumbai,Maharashtra,"Python,Excel,SQL",Graduate,15000,12
+2,Tata Consultancy Services,Software Intern,IT,Chennai,Tamil Nadu,"Python,Java,HTML",Graduate,12000,12
+3,Infosys,ML Intern,IT,Bengaluru,Karnataka,"Python,ML,scikit-learn",Graduate,14000,12
+4,Wipro,Web Development Intern,IT,Hyderabad,Telangana,"HTML,CSS,JavaScript,Flask",Graduate,10000,12
+5,HDFC Bank,Finance Intern,Banking,Mumbai,Maharashtra,"Excel,Finance,Accounting",Graduate,12000,12
+6,ICICI Bank,Data Intern,Banking,Pune,Maharashtra,"Python,SQL,Excel",Graduate,11000,12
+7,Mahindra,Mechanical Design Intern,Automotive,Pune,Maharashtra,"AutoCAD,SolidWorks",Graduate,10000,12
+8,Bajaj Auto,Operations Intern,Automotive,Pune,Maharashtra,"Excel,Operations,Logistics",Graduate,9000,12
+9,OYO Rooms,Business Analyst Intern,Hospitality,Gurugram,Haryana,"Excel,Python,Communication",Graduate,10000,12
+10,MakeMyTrip,Travel Tech Intern,Travel,Gurugram,Haryana,"Python,HTML,CSS",Graduate,11000,12
+11,ONGC,Petroleum Intern,Oil & Gas,Dehradun,Uttarakhand,"Chemistry,Excel,Report Writing",Graduate,13000,12
+12,BPCL,Data Analytics Intern,Oil & Gas,Mumbai,Maharashtra,"Python,SQL,Excel",Graduate,14000,12
+13,Zomato,Product Intern,Food & Retail,Gurugram,Haryana,"Python,Communication,Excel",Graduate,12000,12
+14,Swiggy,Tech Intern,Food & Retail,Bengaluru,Karnataka,"Python,JavaScript,Flask",Graduate,13000,12
+15,Paytm,FinTech Intern,Banking,Noida,Uttar Pradesh,"Python,SQL,Finance",Graduate,12000,12
+16,PhonePe,Data Intern,Banking,Bengaluru,Karnataka,"Python,SQL,Excel",Graduate,13000,12
+17,Sun Pharma,Research Intern,Pharma,Mumbai,Maharashtra,"Biology,Chemistry,Excel",Graduate,10000,12
+18,Dr Reddys,Lab Intern,Pharma,Hyderabad,Telangana,"Chemistry,Biology,Lab Skills",Graduate,10000,12
+19,Hero MotoCorp,Engineering Intern,Automotive,Delhi,Delhi,"Mechanical,AutoCAD,Excel",Graduate,9000,12
+20,Maruti Suzuki,Operations Intern,Automotive,Gurugram,Haryana,"Excel,Operations,Supply Chain",Graduate,10000,12
+21,Coal India,Mining Intern,Energy,Kolkata,West Bengal,"Geology,Excel,Report Writing",Graduate,11000,12
+22,NTPC,Power Systems Intern,Energy,Noida,Uttar Pradesh,"Electrical,Excel,AutoCAD",Graduate,12000,12
+23,Adani Group,Renewable Energy Intern,Energy,Ahmedabad,Gujarat,"Excel,Python,Energy Systems",Graduate,12000,12
+24,Tata Power,Solar Intern,Energy,Mumbai,Maharashtra,"Electrical,Excel,Python",Graduate,11000,12
+25,Indian Oil,Supply Chain Intern,Oil & Gas,Noida,Uttar Pradesh,"Excel,Logistics,Supply Chain"],Graduate,12000,12
+26,HCL Technologies,DevOps Intern,IT,Noida,Uttar Pradesh,"Python,Linux,Git",Graduate,13000,12
+27,Tech Mahindra,AI Intern,IT,Pune,Maharashtra,"Python,ML,TensorFlow"],Graduate,14000,12
+28,Cognizant,Business Analyst Intern,IT,Chennai,Tamil Nadu,"Excel,Communication,SQL"],Graduate,11000,12
+29,Larsen & Toubro,Civil Engineering Intern,Infrastructure,Mumbai,Maharashtra,"AutoCAD,Civil,Excel"],Graduate,10000,12
+30,GMR Group,Airport Operations Intern,Travel,Delhi,Delhi,"Excel,Operations,Communication"],Graduate,10000,12
+31,Axis Bank,Credit Analyst Intern,Banking,Mumbai,Maharashtra,"Finance,Excel,Communication"],Graduate,11000,12
+32,Kotak Mahindra,Risk Intern,Banking,Mumbai,Maharashtra,"Finance,Excel,Python"],Graduate,12000,12
+33,Flipkart,Data Science Intern,Food & Retail,Bengaluru,Karnataka,"Python,ML,SQL"],Graduate,15000,12
+34,Amazon India,Logistics Intern,Food & Retail,Hyderabad,Telangana,"Excel,Logistics,Operations"],Graduate,12000,12
+35,Airtel,Network Intern,Telecom,Gurugram,Haryana,"Python,Networking,Excel"],Graduate,11000,12
+36,Jio,Tech Intern,Telecom,Mumbai,Maharashtra,"Python,JavaScript,HTML"],Graduate,12000,12
+37,Vedanta,Mining Intern,Energy,Udaipur,Rajasthan,"Geology,Excel,Safety"],Graduate,10000,12
+38,JSW Steel,Operations Intern,Energy,Mumbai,Maharashtra,"Excel,Operations,Supply Chain"],Graduate,11000,12
+39,Dabur,FMCG Intern,Food & Retail,Delhi,Delhi,"Excel,Marketing,Communication"],Graduate,9000,12
+40,ITC,Marketing Intern,Food & Retail,Kolkata,West Bengal,"Excel,Marketing,Communication"],Graduate,10000,12
+41,Hindustan Unilever,Supply Chain Intern,Food & Retail,Mumbai,Maharashtra,"Excel,Supply Chain,Operations"],Graduate,12000,12
+42,Nestle India,Quality Intern,Food & Retail,Gurugram,Haryana,"Chemistry,Excel,Quality Control"],Graduate,10000,12
+43,Apollo Hospitals,Health Data Intern,Healthcare,Hyderabad,Telangana,"Python,Excel,Healthcare"],Graduate,10000,12
+44,Fortis Healthcare,Operations Intern,Healthcare,Delhi,Delhi,"Excel,Operations,Communication"],Graduate,9000,12
+45,ISRO,Space Tech Intern,Technology,Bengaluru,Karnataka,"Python,Mathematics,C"],Graduate,12000,12
+46,DRDO,Research Intern,Technology,Delhi,Delhi,"Python,C,Mathematics"],Graduate,11000,12
+47,Byju's,EdTech Intern,Education,Bengaluru,Karnataka,"Python,Communication,HTML"],Graduate,10000,12
+48,Unacademy,Content Intern,Education,Bengaluru,Karnataka,"Communication,Excel,Content Writing"],Graduate,9000,12
+49,Nykaa,E-Commerce Intern,Food & Retail,Mumbai,Maharashtra,"Excel,Marketing,Communication"],Graduate,10000,12
+50,Urban Company,Operations Intern,Food & Retail,Gurugram,Haryana,"Excel,Operations,Communication"],Graduate,9000,12
