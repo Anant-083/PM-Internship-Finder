@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard — PM Internship Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>🇮🇳 PM Internship Finder</h1>
+            <p>Admin Dashboard — Ministry of Corporate Affairs</p>
+        </div>
+
+        <div class="admin-grid">
+
+            <div class="stat-card">
+                <div class="stat-number">50</div>
+                <div class="stat-label">Total Internship Slots</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">14</div>
+                <div class="stat-label">Sectors Covered</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">16</div>
+                <div class="stat-label">States Covered</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">₹9K–15K</div>
+                <div class="stat-label">Stipend Range/month</div>
+            </div>
+
+        </div>
+
+        <div class="admin-section">
+            <h2>Sector Distribution</h2>
+            <div class="sector-bars">
+                <div class="sector-bar">
+                    <span class="sector-name">IT</span>
+                    <div class="bar-fill" style="width: 30%">8</div>
+                </div>
+                <div class="sector-bar">
+                    <span class="sector-name">Banking</span>
+                    <div class="bar-fill" style="width: 22%">6</div>
+                </div>
+                <div class="sector-bar">
+                    <span class="sector-name">Food & Retail</span>
+                    <div class="bar-fill" style="width: 30%">8</div>
+                </div>
+                <div class="sector-bar">
+                    <span class="sector-name">Energy</span>
+                    <div class="bar-fill" style="width: 18%">5</div>
+                </div>
+                <div class="sector-bar">
+                    <span class="sector-name">Automotive</span>
+                    <div class="bar-fill" style="width: 15%">4</div>
+                </div>
+                <div class="sector-bar">
+                    <span class="sector-name">Oil & Gas</span>
+                    <div class="bar-fill" style="width: 15%">4</div>
+                </div>
+                <div class="sector-bar">
+                    <span class="sector-name">Others</span>
+                    <div class="bar-fill" style="width: 56%">15</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-section">
+            <h2>All Internship Slots</h2>
+            <div class="table-wrapper">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>Sector</th>
+                            <th>Location</th>
+                            <th>Stipend</th>
+                            <th>Skills Required</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Reliance Industries</td><td>Data Analyst Intern</td><td>Oil & Gas</td><td>Mumbai, Maharashtra</td><td>₹15,000</td><td>Python, Excel, SQL</td></tr>
+                        <tr><td>2</td><td>TCS</td><td>Software Intern</td><td>IT</td><td>Chennai, Tamil Nadu</td><td>₹12,000</td><td>Python, Java, HTML</td></tr>
+                        <tr><td>3</td><td>Infosys</td><td>ML Intern</td><td>IT</td><td>Bengaluru, Karnataka</td><td>₹14,000</td><td>Python, ML, scikit-learn</td></tr>
+                        <tr><td>4</td><td>Wipro</td><td>Web Development Intern</td><td>IT</td><td>Hyderabad, Telangana</td><td>₹10,000</td><td>HTML, CSS, JavaScript, Flask</td></tr>
+                        <tr><td>5</td><td>HDFC Bank</td><td>Finance Intern</td><td>Banking</td><td>Mumbai, Maharashtra</td><td>₹12,000</td><td>Excel, Finance, Accounting</td></tr>
+                        <tr><td>6</td><td>ICICI Bank</td><td>Data Intern</td><td>Banking</td><td>Pune, Maharashtra</td><td>₹11,000</td><td>Python, SQL, Excel</td></tr>
+                        <tr><td>7</td><td>Mahindra</td><td>Mechanical Design Intern</td><td>Automotive</td><td>Pune, Maharashtra</td><td>₹10,000</td><td>AutoCAD, SolidWorks</td></tr>
+                        <tr><td>8</td><td>Bajaj Auto</td><td>Operations Intern</td><td>Automotive</td><td>Pune, Maharashtra</td><td>₹9,000</td><td>Excel, Operations, Logistics</td></tr>
+                        <tr><td>9</td><td>OYO Rooms</td><td>Business Analyst Intern</td><td>Hospitality</td><td>Gurugram, Haryana</td><td>₹10,000</td><td>Excel, Python, Communication</td></tr>
+                        <tr><td>10</td><td>MakeMyTrip</td><td>Travel Tech Intern</td><td>Travel</td><td>Gurugram, Haryana</td><td>₹11,000</td><td>Python, HTML, CSS</td></tr>
+                        <tr><td>11</td><td>ONGC</td><td>Petroleum Intern</td><td>Oil & Gas</td><td>Dehradun, Uttarakhand</td><td>₹13,000</td><td>Chemistry, Excel, Report Writing</td></tr>
+                        <tr><td>12</td><td>BPCL</td><td>Data Analytics Intern</td><td>Oil & Gas</td><td>Mumbai, Maharashtra</td><td>₹14,000</td><td>Python, SQL, Excel</td></tr>
+                        <tr><td>13</td><td>Zomato</td><td>Product Intern</td><td>Food & Retail</td><td>Gurugram, Haryana</td><td>₹12,000</td><td>Python, Communication, Excel</td></tr>
+                        <tr><td>14</td><td>Swiggy</td><td>Tech Intern</td><td>Food & Retail</td><td>Bengaluru, Karnataka</td><td>₹13,000</td><td>Python, JavaScript, Flask</td></tr>
+                        <tr><td>15</td><td>Paytm</td><td>FinTech Intern</td><td>Banking</td><td>Noida, Uttar Pradesh</td><td>₹12,000</td><td>Python, SQL, Finance</td></tr>
+                        <tr><td>16</td><td>PhonePe</td><td>Data Intern</td><td>Banking</td><td>Bengaluru, Karnataka</td><td>₹13,000</td><td>Python, SQL, Excel</td></tr>
+                        <tr><td>17</td><td>Sun Pharma</td><td>Research Intern</td><td>Pharma</td><td>Mumbai, Maharashtra</td><td>₹10,000</td><td>Biology, Chemistry, Excel</td></tr>
+                        <tr><td>18</td><td>Dr Reddys</td><td>Lab Intern</td><td>Pharma</td><td>Hyderabad, Telangana</td><td>₹10,000</td><td>Chemistry, Biology, Lab Skills</td></tr>
+                        <tr><td>19</td><td>Hero MotoCorp</td><td>Engineering Intern</td><td>Automotive</td><td>Delhi, Delhi</td><td>₹9,000</td><td>Mechanical, AutoCAD, Excel</td></tr>
+                        <tr><td>20</td><td>Maruti Suzuki</td><td>Operations Intern</td><td>Automotive</td><td>Gurugram, Haryana</td><td>₹10,000</td><td>Excel, Operations, Supply Chain</td></tr>
+                        <tr><td>21</td><td>Coal India</td><td>Mining Intern</td><td>Energy</td><td>Kolkata, West Bengal</td><td>₹11,000</td><td>Geology, Excel, Report Writing</td></tr>
+                        <tr><td>22</td><td>NTPC</td><td>Power Systems Intern</td><td>Energy</td><td>Noida, Uttar Pradesh</td><td>₹12,000</td><td>Electrical, Excel, AutoCAD</td></tr>
+                        <tr><td>23</td><td>Adani Group</td><td>Renewable Energy Intern</td><td>Energy</td><td>Ahmedabad, Gujarat</td><td>₹12,000</td><td>Excel, Python, Energy Systems</td></tr>
+                        <tr><td>24</td><td>Tata Power</td><td>Solar Intern</td><td>Energy</td><td>Mumbai, Maharashtra</td><td>₹11,000</td><td>Electrical, Excel, Python</td></tr>
+                        <tr><td>25</td><td>Indian Oil</td><td>Supply Chain Intern</td><td>Oil & Gas</td><td>Noida, Uttar Pradesh</td><td>₹12,000</td><td>Excel, Logistics, Supply Chain</td></tr>
+                        <tr><td>26</td><td>HCL Technologies</td><td>DevOps Intern</td><td>IT</td><td>Noida, Uttar Pradesh</td><td>₹13,000</td><td>Python, Linux, Git</td></tr>
+                        <tr><td>27</td><td>Tech Mahindra</td><td>AI Intern</td><td>IT</td><td>Pune, Maharashtra</td><td>₹14,000</td><td>Python, ML, TensorFlow</td></tr>
+                        <tr><td>28</td><td>Cognizant</td><td>Business Analyst Intern</td><td>IT</td><td>Chennai, Tamil Nadu</td><td>₹11,000</td><td>Excel, Communication, SQL</td></tr>
+                        <tr><td>29</td><td>Larsen & Toubro</td><td>Civil Engineering Intern</td><td>Infrastructure</td><td>Mumbai, Maharashtra</td><td>₹10,000</td><td>AutoCAD, Civil, Excel</td></tr>
+                        <tr><td>30</td><td>GMR Group</td><td>Airport Operations Intern</td><td>Travel</td><td>Delhi, Delhi</td><td>₹10,000</td><td>Excel, Operations, Communication</td></tr>
+                        <tr><td>31</td><td>Axis Bank</td><td>Credit Analyst Intern</td><td>Banking</td><td>Mumbai, Maharashtra</td><td>₹11,000</td><td>Finance, Excel, Communication</td></tr>
+                        <tr><td>32</td><td>Kotak Mahindra</td><td>Risk Intern</td><td>Banking</td><td>Mumbai, Maharashtra</td><td>₹12,000</td><td>Finance, Excel, Python</td></tr>
+                        <tr><td>33</td><td>Flipkart</td><td>Data Science Intern</td><td>Food & Retail</td><td>Bengaluru, Karnataka</td><td>₹15,000</td><td>Python, ML, SQL</td></tr>
+                        <tr><td>34</td><td>Amazon India</td><td>Logistics Intern</td><td>Food & Retail</td><td>Hyderabad, Telangana</td><td>₹12,000</td><td>Excel, Logistics, Operations</td></tr>
+                        <tr><td>35</td><td>Airtel</td><td>Network Intern</td><td>Telecom</td><td>Gurugram, Haryana</td><td>₹11,000</td><td>Python, Networking, Excel</td></tr>
+                        <tr><td>36</td><td>Jio</td><td>Tech Intern</td><td>Telecom</td><td>Mumbai, Maharashtra</td><td>₹12,000</td><td>Python, JavaScript, HTML</td></tr>
+                        <tr><td>37</td><td>Vedanta</td><td>Mining Intern</td><td>Energy</td><td>Udaipur, Rajasthan</td><td>₹10,000</td><td>Geology, Excel, Safety</td></tr>
+                        <tr><td>38</td><td>JSW Steel</td><td>Operations Intern</td><td>Energy</td><td>Mumbai, Maharashtra</td><td>₹11,000</td><td>Excel, Operations, Supply Chain</td></tr>
+                        <tr><td>39</td><td>Dabur</td><td>FMCG Intern</td><td>Food & Retail</td><td>Delhi, Delhi</td><td>₹9,000</td><td>Excel, Marketing, Communication</td></tr>
+                        <tr><td>40</td><td>ITC</td><td>Marketing Intern</td><td>Food & Retail</td><td>Kolkata, West Bengal</td><td>₹10,000</td><td>Excel, Marketing, Communication</td></tr>
+                        <tr><td>41</td><td>Hindustan Unilever</td><td>Supply Chain Intern</td><td>Food & Retail</td><td>Mumbai, Maharashtra</td><td>₹12,000</td><td>Excel, Supply Chain, Operations</td></tr>
+                        <tr><td>42</td><td>Nestle India</td><td>Quality Intern</td><td>Food & Retail</td><td>Gurugram, Haryana</td><td>₹10,000</td><td>Chemistry, Excel, Quality Control</td></tr>
+                        <tr><td>43</td><td>Apollo Hospitals</td><td>Health Data Intern</td><td>Healthcare</td><td>Hyderabad, Telangana</td><td>₹10,000</td><td>Python, Excel, Healthcare</td></tr>
+                        <tr><td>44</td><td>Fortis Healthcare</td><td>Operations Intern</td><td>Healthcare</td><td>Delhi, Delhi</td><td>₹9,000</td><td>Excel, Operations, Communication</td></tr>
+                        <tr><td>45</td><td>ISRO</td><td>Space Tech Intern</td><td>Technology</td><td>Bengaluru, Karnataka</td><td>₹12,000</td><td>Python, Mathematics, C</td></tr>
+                        <tr><td>46</td><td>DRDO</td><td>Research Intern</td><td>Technology</td><td>Delhi, Delhi</td><td>₹11,000</td><td>Python, C, Mathematics</td></tr>
+                        <tr><td>47</td><td>Byju's</td><td>EdTech Intern</td><td>Education</td><td>Bengaluru, Karnataka</td><td>₹10,000</td><td>Python, Communication, HTML</td></tr>
+                        <tr><td>48</td><td>Unacademy</td><td>Content Intern</td><td>Education</td><td>Bengaluru, Karnataka</td><td>₹9,000</td><td>Communication, Excel, Content Writing</td></tr>
+                        <tr><td>49</td><td>Nykaa</td><td>E-Commerce Intern</td><td>Food & Retail</td><td>Mumbai, Maharashtra</td><td>₹10,000</td><td>Excel, Marketing, Communication</td></tr>
+                        <tr><td>50</td><td>Urban Company</td><td>Operations Intern</td><td>Food & Retail</td><td>Gurugram, Haryana</td><td>₹9,000</td><td>Excel, Operations, Communication</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="actions">
+            <a href="/" class="btn-back">← Back to Home</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
