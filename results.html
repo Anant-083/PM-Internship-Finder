@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Matches — PM Internship Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>🇮🇳 PM Internship Finder</h1>
+            <p>Top matches for <strong>{{ student.name }}</strong></p>
+        </div>
+
+        <div class="student-summary">
+            <span>📍 {{ student.state }}</span>
+            <span>🎓 {{ student.education }}</span>
+            <span>💼 {{ student.sector_preference }}</span>
+            <span>🛠 {{ student.skills }}</span>
+        </div>
+
+        <div class="matches-grid">
+            {% for item in matches %}
+            <div class="match-card">
+
+                <div class="match-header">
+                    <div class="match-rank">#{{ loop.index }}</div>
+                    <div class="match-score">
+                        <span class="score-number">{{ item.score }}</span>
+                        <span class="score-label">/100</span>
+                    </div>
+                </div>
+
+                <div class="match-body">
+                    <h2>{{ item.internship.company }}</h2>
+                    <h3>{{ item.internship.role }}</h3>
+
+                    <div class="match-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <span>{{ item.internship.location }}, {{ item.internship.state }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🏭</span>
+                            <span>{{ item.internship.sector }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">💰</span>
+                            <span>₹{{ item.internship.stipend }}/month</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📅</span>
+                            <span>{{ item.internship.duration_months }} months</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <p class="skills-label">Required Skills:</p>
+                        <div class="skills-tags">
+                            {% for skill in item.internship.skills_required.split(',') %}
+                            <span class="skill-tag 
+                                {% if skill.strip().lower() in item.matched_skills %}
+                                skill-matched
+                                {% endif %}">
+                                {{ skill.strip() }}
+                            </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="ai-explanation">
+                        <span class="ai-label">🤖 AI Insight</span>
+                        <p>{{ item.explanation }}</p>
+                    </div>
+
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="actions">
+            <a href="/" class="btn-back">← Search Again</a>
+        </div>
+
+        <div class="footer">
+            <a href="/admin">Admin Dashboard</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
