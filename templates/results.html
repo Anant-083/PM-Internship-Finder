@@ -7,75 +7,63 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-
     <div class="container">
 
         <div class="header">
-            <h1>🇮🇳 PM Internship Finder</h1>
-            <p>Top matches for <strong>{{ student.name }}</strong></p>
+            <div>
+                <h1>PM Internship Finder</h1>
+                <p>Ministry of Corporate Affairs · SIH25033</p>
+            </div>
+            <span class="header-badge">AI Powered</span>
         </div>
 
         <div class="student-summary">
-            <span>📍 {{ student.state }}</span>
-            <span>🎓 {{ student.education }}</span>
-            <span>💼 {{ student.sector_preference }}</span>
-            <span>🛠 {{ student.skills }}</span>
+            <span>{{ student.state }}</span>
+            <span>{{ student.education }}</span>
+            <span>{{ student.sector_preference }}</span>
+            <span>{{ student.skills }}</span>
         </div>
+
+        <p style="font-size:13px; color:#888; margin-bottom:16px;">
+            Top matches for <strong style="color:#1a1a2e;">{{ student.name }}</strong> — ranked by AI matching score
+        </p>
 
         <div class="matches-grid">
             {% for item in matches %}
             <div class="match-card">
 
                 <div class="match-header">
-                    <div class="match-rank">#{{ loop.index }}</div>
-                    <div class="match-score">
-                        <span class="score-number">{{ item.score }}</span>
-                        <span class="score-label">/100</span>
+                    <div class="match-left">
+                        <div class="rank-badge">#{{ loop.index }}</div>
+                        <div>
+                            <div class="match-title">{{ item.internship.company }}</div>
+                            <div class="match-role">{{ item.internship.role }}</div>
+                        </div>
                     </div>
+                    <div class="score-chip">{{ item.score }} / 100</div>
                 </div>
 
-                <div class="match-body">
-                    <h2>{{ item.internship.company }}</h2>
-                    <h3>{{ item.internship.role }}</h3>
+                <div class="match-meta">
+                    <span class="meta-item">{{ item.internship.location }}, {{ item.internship.state }}</span>
+                    <span class="meta-item">{{ item.internship.sector }}</span>
+                    <span class="meta-item">Rs {{ item.internship.stipend }}/month</span>
+                    <span class="meta-item">{{ item.internship.duration_months }} months</span>
+                </div>
 
-                    <div class="match-details">
-                        <div class="detail-item">
-                            <span class="detail-icon">📍</span>
-                            <span>{{ item.internship.location }}, {{ item.internship.state }}</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-icon">🏭</span>
-                            <span>{{ item.internship.sector }}</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-icon">💰</span>
-                            <span>₹{{ item.internship.stipend }}/month</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-icon">📅</span>
-                            <span>{{ item.internship.duration_months }} months</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-section">
-                        <p class="skills-label">Required Skills:</p>
-                        <div class="skills-tags">
-                            {% for skill in item.internship.skills_required.split(',') %}
-                            <span class="skill-tag 
-                                {% if skill.strip().lower() in item.matched_skills %}
-                                skill-matched
-                                {% endif %}">
-                                {{ skill.strip() }}
-                            </span>
-                            {% endfor %}
-                        </div>
+                <div class="match-bottom">
+                    <p class="skills-label">Required Skills</p>
+                    <div class="skills-row">
+                        {% for skill in item.internship.skills_required.split(',') %}
+                        <span class="skill-tag {% if skill.strip().lower() in item.matched_skills %}skill-matched{% endif %}">
+                            {{ skill.strip() }}
+                        </span>
+                        {% endfor %}
                     </div>
 
                     <div class="ai-explanation">
-                        <span class="ai-label">🤖 AI Insight</span>
+                        <div class="ai-label">AI Insight</div>
                         <p>{{ item.explanation }}</p>
                     </div>
-
                 </div>
 
             </div>
@@ -83,7 +71,7 @@
         </div>
 
         <div class="actions">
-            <a href="/" class="btn-back">← Search Again</a>
+            <a href="/" class="btn-back">Back to Home</a>
         </div>
 
         <div class="footer">
@@ -91,6 +79,5 @@
         </div>
 
     </div>
-
 </body>
 </html>
